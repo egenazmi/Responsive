@@ -105,8 +105,8 @@
 .urun-cardlar {
     display: grid;
     grid-template-columns: repeat(auto-fit,
-                        minmax(min(250px,100%), 1fr));
-    grid-gap: 3rem;
+                        minmax(min(225px,100%), 1fr));
+    grid-gap: 32px;
     z-index: 0;
 }
 
