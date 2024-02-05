@@ -103,16 +103,14 @@
 }
 
 .urun-cardlar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px 35px;
-    /* justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+                        minmax(min(13.25rem,100%), 1fr));
+    grid-gap: 3rem;
     z-index: 0;
 }
 
 .card {
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
-    width: 309px;
     z-index: 1;
 }
 
