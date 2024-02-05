@@ -66,12 +66,6 @@
     box-sizing: border-box;
 }
 
-.container {
-    max-width: 1344px;
-    width: 100%;
-    margin: auto;
-}
-
 .card-title {
     color: var(--Color-Gray-1, #3A3A3A);
     font-family: Poppins;
@@ -103,17 +97,17 @@
 }
 
 .urun-cardlar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px 35px;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns:  repeat(auto-fit, 
+                            minmax(min(11.25rem, 100%), 1fr));
     /* justify-content: center; */
-    z-index: 0;
 }
 
 .card {
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
-    width: 309px;
-    z-index: 1;
+    position: relative;
+    min-width: 255,5px;
 }
 
 .card:hover {
@@ -136,17 +130,13 @@
 
 .card-img {
     width: 100%;
-    width: 285px;
-    height: 300px;
-    z-index: 1;
     position: relative;
     overflow: hidden;
-    /* border-radius: 5px 5px 0 0; */
 }
 
 .card-img img {
     width: 100%;
-    z-index: 1;
+    object-fit: contain;
 }
 
 .back-img {
@@ -154,15 +144,16 @@
     top: 0;
     left: 100%;
     transition: .4s ease;
-    z-index: 11;
 }
 
 .card-img:hover {
     .back-img {
         left: 0;
-        z-index: 1;
     }
-
+    .front-img {
+        opacity: 0;
+        transition: .4s ease;
+    }
     .disc {
         animation: disc 1000ms ease 0s 1 normal none;
     }
@@ -175,7 +166,7 @@
     background-color: #B88E2F;
     width: 40px;
     height: 40px;
-    z-index: 3;
+    z-index: 9999;
     position: absolute;
     text-align: center;
     right: 20px;
@@ -200,7 +191,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 3;
+    z-index: 9999;
     right: 15px;
     top: 5px;
     opacity: 0;
