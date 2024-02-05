@@ -105,7 +105,7 @@
 .urun-cardlar {
     display: grid;
     grid-template-columns: repeat(auto-fit,
-                        minmax(min(13.25rem,100%), 1fr));
+                        minmax(min(250px,100%), 1fr));
     grid-gap: 3rem;
     z-index: 0;
 }
@@ -130,6 +130,7 @@
     .fav {
         opacity: 1;
     }
+    border: 1px solid #B88E2F;
 }
 
 .card-img {
