@@ -230,7 +230,7 @@ font-weight: 700;
         position: fixed;
         background-color: #fff;
         z-index: 9000;
-        height: 100vh;
+        height: calc(100vh - 100px);
         left: -195px;;
         top:0;
         gap:30px;
