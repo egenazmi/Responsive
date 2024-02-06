@@ -189,6 +189,9 @@ font-weight: 700;
         width: 50%;
         height: 50px;
     }
+    .urun-cardlar{
+    grid-gap: 16px !important;
+}
     .hamburger{
         position: absolute;
         left: 27px;
@@ -258,6 +261,25 @@ font-weight: 700;
     .nav-link-right {
         z-index: 9999 !important;
     }
+    .nav-link-right:hover {
+        background-color: transparent;
+    }
+    .categories {
+        display:block!important;
+        position:fixed !important;
+        height: 100%;
+        background-color: white;
+        z-index: 8888;
+        top:30px !important;
+        border-radius: 0px !important;
+        padding-left: 20px;
+        width: 250px !important;
+        left: -250px;
+        transition: transform 1s;
+    }
+    .filter-btn{
+        display: block!important;
+    }
 }
 @keyframes animationBar1{
     from{
@@ -315,4 +337,7 @@ font-weight: 700;
 }
 .openSideBar{
     transform: translateX(195px);
+}
+.openCategory{
+    transform: translateX(250px);
 }

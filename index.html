@@ -30,6 +30,14 @@
                     <li class="nav-link"><a href="#">İletişim</a></li>
                 </ul>
                 <ul class="nav-links-right">
+                    <li class="nav-link-right filter-btn">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="filter" style="height: 24px; width: 24px;">
+                                <path d="M2 7h.142a3.981 3.981 0 0 0 7.716 0H30a1 1 0 0 0 0-2H9.858a3.981 3.981 0 0 0-7.716 0H2a1 1 0 0 0 0 2zm4-3a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm24 11h-.142a3.981 3.981 0 0 0-7.716 0H2a1 1 0 0 0 0 2h20.142a3.981 3.981 0 0 0 7.716 0H30a1 1 0 0 0 0-2zm-4 3a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm4 7H19.858a3.981 3.981 0 0 0-7.716 0H2a1 1 0 0 0 0 2h10.142a3.981 3.981 0 0 0 7.716 0H30a1 1 0 0 0 0-2zm-14 3a2 2 0 1 1 2-2 2 2 0 0 1-2 2z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>       
                     <li class="nav-link-right">
                         <a href="#">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -78,7 +86,7 @@
                                     fill="currentColor" />
                             </svg>
                         </a>
-                    </li>
+                    </li>            
                 </ul>
             </div>
         </div>
@@ -96,6 +104,7 @@
 
     <section class="products">
         <div class="container">
+            
             <div class="categories">
                 <div class="fiyat-dropdown dropdown">
                     <div id="fiyat-btn" class="category-btn">
@@ -168,6 +177,36 @@
                             <label for="1*">1<span class="material-symbols-outlined">
                                 star
                                 </span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="renk-dropdown dropdown">
+                    <div id="renk-btn" class="category-btn">
+                        Renk 
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
+                    <div id="renk-body" class="dropdown-body">
+                        <div class="renk-row check-row">
+                            <input type="checkbox" id="white">
+                            <label for="1*">White <div class="white-circle color-circle" style="background-color: white;"></div></label>
+                        </div>
+                        <div class="renk-row check-row">
+                            <input type="checkbox" id="black">
+                            <label for="1*">Black <div class="black-circle color-circle" style="background-color: black;"></div></label>
+                        </div>
+                        <div class="renk-row check-row">
+                            <input type="checkbox" id="gray">
+                            <label for="1*">Gray <div class="gray-circle color-circle" style="background-color: gray;"></div></label>
+                        </div>
+                        <div class="renk-row check-row">
+                            <input type="checkbox" id="yellow">
+                            <label for="1*">Yellow <div class="yellow-circle color-circle" style="background-color: yellow;"></div></label>
+                        </div>
+                        <div class="renk-row check-row">
+                            <input type="checkbox" id="blue">
+                            <label for="1*">Blue <div class="blue-circle color-circle" style="background-color: blue;"></div></label>
                         </div>
                     </div>
                 </div>
