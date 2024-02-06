@@ -136,6 +136,9 @@ font-weight: 700;
     padding: 100px 0;
 }
 @media screen and (max-width:1024px) {
+    header{
+        position: static;
+    }
     .navbar .container{
         height: fit-content;
         flex-direction: column;
@@ -144,6 +147,7 @@ font-weight: 700;
         gap: 15px;
         flex-direction: column;
         height: fit-content;
+        margin-top: 50px;
     }
     .nav-link a{
         padding: 10 0px;
@@ -151,6 +155,17 @@ font-weight: 700;
     }
     .nav-links-right{
         gap: 32px;
+    }
+    .banner {
+        margin-top: 0px;
+    }
+    .logo-area{
+        position: fixed;
+        height: 50px;
+        width: 100%;
+        background-color: #fff;
+        justify-content: center;
+        z-index: 8000;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -176,6 +191,8 @@ font-weight: 700;
         height: 50px;
     }
     .hamburger{
+        position: absolute;
+        left: 27px;
         display: flex;
         z-index: 99999;
     }
