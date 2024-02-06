@@ -28,9 +28,6 @@ a {
     height: 100px;
 }
 
-.menu-toggle {
-    display:none;}
-
 .logo-area {
     gap: 5px;
     align-items: center;
@@ -43,13 +40,23 @@ font-size: 34px;
 font-style: normal;
 font-weight: 700;
 }
+.hamburger{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    flex-direction: column;
+    display: none;
+}
+.bar1, .bar2, .bar3{
+    height: 3px;
+    background-color:#000000;
+    border-radius: 5px;
+    width: 40px;
+}
 
 .nav-links {
     gap: 45px;
-}
-
-.burger {
-    display: none;
 }
 
 .nav-link a {
@@ -67,7 +74,6 @@ font-weight: 700;
 .nav-link a:hover {
     color: #fff;
     background-color: #B88E2F;
-
 }
 
 .nav-links-right {
@@ -122,101 +128,148 @@ font-weight: 700;
     padding: 100px 0;
 }
 @media only screen and (max-width: 992px) {
-    .banner {
-        margin-top: 100px;
+    #logo{
+        width: 50%;
     }
-
+    .navbar{
+        height: 50px;
+    }
     .navbar .container {
         flex-direction: row-reverse;
-        align-items: start;
-        height: fit-content;
-        gap: 0px;
-        top: 100px;
-    }
-
-    .menu-toggle {
-        display: block;
+        align-items: center;
+        padding: 0 25px;
+        height: 50px;
+        background-color: #fff ;
         position: fixed;
-        background-color: #fff;
-        top: 0;
-        left: 0;
         z-index: 9999;
-        width: 50px;
-        height: 90px;
-        opacity: 0;
-        cursor: pointer;
-        margin-left: 20px;
-
     }
-
-    input:checked~.nav-links {
-        display: flex;
-    }
-
-    .burger {
-        display: block;
-        position: fixed;
-        width: 50px;
-        height: 100px;
-        padding-left: 20px;
-        top: 0;
-        left: 0px;
-        background-color: #fff;
-        width: 50%;
-        z-index: 900;
-    }
-
     .logo-area {
-        position: fixed;
         justify-content: end;
-        right: 0;
         background-color: #fff;
         width: 50%;
-        z-index: 999;
+        height: 50px;
     }
+    .hamburger{
+        display: flex;
+        z-index: 99999;
+    }
+    .animationBar1{
+        animation: animationBar1 700ms;
+        animation-fill-mode: forwards;
+    }
+    .animationBar2{
+        animation: animationBar2 700ms;
+        animation-fill-mode: forwards;
 
+    }
+    .animationBar3{
+        animation: animationBar3 700ms;
+        animation-fill-mode: forwards;
+
+    }
+    .animationBar1Close{
+        animation: animationBar1Close 700ms;
+        animation-fill-mode: forwards;
+    }
+    .animationBar2Close{
+        animation: animationBar2Close 700ms;
+        animation-fill-mode: forwards;
+    }
+    .animationBar3Close{
+        animation: animationBar3Close 700ms;
+        animation-fill-mode: forwards;
+    }
     .nav-links {
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        height: fit-content;
-        gap: 20px;
+        align-items: flex-start ;
+        justify-content: center;
         position: fixed;
-        left: 0;
-        top: 100px;
         background-color: #fff;
-        width: 100%;
-        z-index: 9999;
-        display: none;
+        z-index: 9000;
+        height: 100vh;
+        left: -195px;;
+        top:0;
+        gap:30px;
         transition: 0.3s all;
-
+        padding: 27px;
     }
-
-    .nav-link {
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-        width: 100%;
-        padding: 10px;
+    .nav-links a {
+        font-size: 24px;
+        padding: 0;
     }
-
-    .nav-links a:hover {
+    .nav-link a:hover{
         background-color: transparent;
         color: #000;
     }
-
-    .nav-links a {
-        font-size: 24px;
-    }
-
     .nav-links-right {
         position: fixed;
         bottom: 0px;
+        left:0;
         z-index: 9900;
         background-color: #fff;
         height: 50px;
         width: 100%;
         justify-content: space-evenly;
     }
-
     .nav-link-right {
         z-index: 9999 !important;
     }
+}
+@keyframes animationBar1{
+    from{
+        transform:rotate(0);
+        
+
+    }
+    to{
+        transform:translatey(11px) rotate(45deg) ;
+        
+    }
+}
+@keyframes animationBar2{
+    from{
+        transform: scale(1.0);
+    }
+    to{
+        transform: scale(0);
+    }
+}
+@keyframes animationBar3{
+    from{
+        transform:rotate(0);
+
+    }
+    to{
+        transform: translatey(-11px) rotate(-45deg);
+
+    }
+}
+@keyframes animationBar1Close{
+    from{
+        transform:translatey(11px) rotate(45deg) ;
+        
+    }
+    to{
+        transform:rotate(0);
+}
+}
+@keyframes animationBar2Close{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1.0);
+    }
+}
+@keyframes animationBar3Close{
+    from{
+        transform: translatey(-11px) rotate(45deg);
+    }
+    to{
+        transform:rotate(0);
+    }
+}
+.openSideBar{
+    transform: translateX(195px);
 }
