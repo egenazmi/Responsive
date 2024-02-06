@@ -1,6 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@keyframes disc {
+    0% {
+        transform: translate(0);
+    }
 
+    10% {
+        transform: translate(-2px, -2px);
+    }
+
+    20% {
+        transform: translate(2px, -2px);
+    }
+
+    30% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(2px, 2px);
+    }
+
+    50% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, -2px);
+    }
+
+    70% {
+        transform: translate(-2px, 2px);
+    }
+
+    80% {
+        transform: translate(-2px, -2px);
+    }
+
+    90% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
 
 @keyframes myAnim {
     0% {
@@ -132,7 +176,7 @@
     top: 10px;
 }
 .disc p {
-    line-height: 15px;
+    line-height: 35px;
     rotate: -45deg;
     font-size: 11px;
     font-weight: 700;
@@ -281,7 +325,7 @@
     flex-direction: column;
     gap: 6px;
     height: 0px;
-    overflow: hidden;
+    overflow: auto;
 }
 .dropdown-body [type="checkbox"]{
     width: 20px;
