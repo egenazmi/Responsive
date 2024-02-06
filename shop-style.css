@@ -230,12 +230,13 @@ font-weight: 700;
         position: fixed;
         background-color: #fff;
         z-index: 9000;
-        height: calc(100vh - 100px);
+        height: 100vh;
         left: -195px;;
         top:0;
         gap:30px;
         transition: transform 1s;
         padding: 27px;
+        margin-top: 0;
     }
     .nav-links a {
         font-size: 24px;
