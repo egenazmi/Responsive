@@ -3,15 +3,37 @@ const bar1        = document.querySelector('.bar1')
 const bar2        = document.querySelector('.bar2')
 const bar3        = document.querySelector('.bar3')
 
-hamburger.addEventListener('click', () => {
-    bar1.classList.toggle('animationBar1')
-    bar2.classList.toggle('animationBar2')
-    bar3.classList.toggle('animationBar3')
+hamburger.addEventListener('click', () => 
+{
+    if (bar1.classList.contains('animationBar1')) 
+    {
+        bar1.classList.remove('animationBar1')  
+        bar2.classList.remove('animationBar2')    
+        bar3.classList.remove('animationBar3')
+        bar1.classList.add('animationBar1Close')  
+        bar2.classList.add('animationBar2Close')    
+        bar3.classList.add('animationBar3Close')
+    }    
+    else
+    {
+        bar1.classList.remove('animationBar1Close')  
+        bar2.classList.remove('animationBar2Close')    
+        bar3.classList.remove('animationBar3Close')
+        bar1.classList.add('animationBar1')  
+        bar2.classList.add('animationBar2')    
+        bar3.classList.add('animationBar3')
+    }
 })
 
 const navlinks    = document.querySelector('.nav-links')
 hamburger.addEventListener('click', () => {
-    navlinks.classList.toggle('openSideBar')
+    if (category.classList.contains('openCategory')) {
+        category.classList.remove('openCategory')
+        navlinks.classList.add('openSideBar')
+    }
+    else {
+        navlinks.classList.toggle('openSideBar')
+    }
 })
 
 const fiyatBtn    = document.querySelector('#fiyat-btn')
@@ -59,5 +81,17 @@ renkBtn.addEventListener('click', () => {
 const filterBtn    = document.querySelector('.filter-btn')
 const category = document.querySelector('.categories')
 filterBtn.addEventListener('click', () => {
-    category.classList.toggle('openCategory')
+    if (navlinks.classList.contains('openSideBar')) {
+        bar1.classList.remove('animationBar1')  
+        bar2.classList.remove('animationBar2')    
+        bar3.classList.remove('animationBar3')
+        bar1.classList.add('animationBar1Close')  
+        bar2.classList.add('animationBar2Close')    
+        bar3.classList.add('animationBar3Close')
+        navlinks.classList.remove('openSideBar')
+        category.classList.add('openCategory')
+    }
+    else {
+        category.classList.toggle('openCategory')
+    }
 })

@@ -329,7 +329,7 @@ font-weight: 700;
 }
 @keyframes animationBar3Close{
     from{
-        transform: translatey(-11px) rotate(45deg);
+        transform: translatey(-11px) rotate(-45deg);
     }
     to{
         transform:rotate(0);
