@@ -371,7 +371,7 @@
         .categories {
             display: block !important;
             position: fixed !important;
-            height: 100vh !important;
+            height: calc(100vh - 98px) !important;
             background-color: white;
             z-index: 8888;
             top: 29px !important;
