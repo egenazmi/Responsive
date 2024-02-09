@@ -134,3 +134,85 @@ parcaBtn.addEventListener('click', () => {
 
     }
 })
+
+
+const sl1 = document.querySelector(".sl1");
+const sliders = document.querySelectorAll(".slider");
+const prevBtn = document.querySelector(".prevBtn");
+const nextBtn = document.querySelector(".nextBtn");
+const indicators = document.querySelectorAll(".indicator");
+const ind1 = document.querySelector("#ind1");
+const ind2 = document.querySelector("#ind2");
+const ind3 = document.querySelector("#ind3");
+var i = 0;
+var x;
+
+
+function next() {
+    i++;
+    if (i > sliders.length - 1) {
+        i = 0;
+        console.log(i);
+        sliders[i].classList.add("active");
+        sliders[sliders.length - 1].classList.remove("active");
+        indicators[i].classList.add("activeIndicator");
+        indicators[sliders.length - 1].classList.remove("activeIndicator");
+    }
+    else {
+        sliders[i - 1].classList.remove("active");
+        sliders[i].classList.add("active");
+        indicators[i - 1].classList.remove("activeIndicator");
+        indicators[i].classList.add("activeIndicator");
+    }
+}
+
+function prev() {
+    i--;
+    if (i < 0) {
+        i = sliders.length - 1; //2
+        console.log(i);
+        sliders[0].classList.remove("active");
+        sliders[i].classList.add("active");
+        indicators[0].classList.remove("activeIndicator");
+        indicators[i].classList.add("activeIndicator");
+
+    }
+    else {
+        console.log(i, i);
+        sliders[i + 1].classList.remove("active");
+        sliders[i].classList.add("active");
+        indicators[i + 1].classList.remove("activeIndicator");
+        indicators[i].classList.add("activeIndicator");
+    }
+}
+nextBtn.addEventListener("click", next);
+prevBtn.addEventListener("click", prev);
+
+ind1.addEventListener("click", () => {
+    console.log(i);
+    indicators[i].classList.remove("activeIndicator");
+    sliders[i].classList.remove("active");
+    i = 0;
+    indicators[i].classList.add("activeIndicator");
+    sliders[i].classList.add("active");
+});
+
+ind2.addEventListener("click", () => {
+    console.log(i);
+    indicators[i].classList.remove("activeIndicator");
+    sliders[i].classList.remove("active");
+    i = 1;
+    indicators[i].classList.add("activeIndicator");
+    sliders[i].classList.add("active");
+})
+
+ind3.addEventListener("click", () => {
+    console.log(i);
+    indicators[i].classList.remove("activeIndicator");
+    sliders[i].classList.remove("active");
+    i = 2;
+    indicators[i].classList.add("activeIndicator");
+    sliders[i].classList.add("active");
+})
+
+

@@ -68,6 +68,7 @@
 
 .products {
     display: flex;
+    margin-top: 100px;
 }
 
 .products .container {
@@ -377,6 +378,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     box-shadow: 20px 20px 29px -36px rgba(0, 0, 0, 0.37);
+    z-index: 99998;
 }
 
 .category-btn {
