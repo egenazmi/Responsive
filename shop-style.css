@@ -190,6 +190,8 @@ font-weight: 700;
         height: 50px;
     }
     .urun-cardlar{
+        grid-template-columns: repeat(auto-fit,
+                        minmax(min(175px,100%), 1fr)) !important;
     grid-gap: 16px !important;
 }
     .hamburger{
