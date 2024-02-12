@@ -1129,6 +1129,18 @@
             flex-direction: column;
             gap: 50px;
         }
+
+        footer {
+            margin-bottom: 50px;
+        }
+
+        .footer__bank-cards {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
     }
 
 
@@ -1147,7 +1159,7 @@
     footer .container {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 20px;
         flex-wrap: wrap;
     }
@@ -1237,10 +1249,12 @@
         cursor: pointer;
     }
 
-    .footer__bank-cards {
+    footer .container:nth-child(2), .footer__bank-cards {
         display: flex;
+        width: 100%;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         gap: 6px;
     }
 
