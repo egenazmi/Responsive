@@ -214,5 +214,9 @@ ind3.addEventListener("click", () => {
     indicators[i].classList.add("activeIndicator");
     sliders[i].classList.add("active");
 })
+const auto = true;
+var Interval = 7000;
 
-
+if (auto) {
+    setInterval(next, Interval);
+}
