@@ -220,16 +220,7 @@ var Interval = 7000;
 if (auto) {
     setInterval(next, Interval);
 }
-function touch() {
-    sliders[0].addEventListener("touchmove", touchHandler, false);
-    sliders[1].addEventListener("touchmove", touchHandler, false);
-    sliders[2].addEventListener("touchmove", touchHandler, false);
-    function touchHandler(event) {
-        e.preventDefault();
 
-        console.log("I am touch move event");
-    }
-}
 
 const ourProducts = document.querySelectorAll('.our-products-inner')
 const nothvr = document.getElementById("nothvr");
@@ -240,16 +231,16 @@ ourProducts[4].addEventListener("mouseover", mouseOver);
 ourProducts[2].addEventListener("mouseover", mouseOver2);
 const oprText = document.getElementById("oprText-none")
 nothvr.style.background = "linear-gradient(180deg, rgba(255, 255, 255, 0) 53%, rgba(0, 0, 0, 1) 100%)";
-oprText.classList.remove("displayNone");
+oprText.classList.remove("oprTextNone");
 function mouseOver() {
     ourProducts[2].style.flex = "1";
     nothvr.style.backgroundColor = "#00000085";
     console.log(ourProducts[2].style.backgroundColor);
-    oprText.classList.add("displayNone");
+    oprText.classList.add("oprTextNone");
 }
 function mouseOver2() {
     ourProducts[2].style.flex = "3";
     nothvr.style.background = "linear-gradient(180deg, rgba(255, 255, 255, 0) 53%, rgba(0, 0, 0, 1) 100%)";
-    oprText.classList.remove("displayNone");
+    oprText.classList.remove("oprTextNone");
 }
 

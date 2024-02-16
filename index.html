@@ -12,23 +12,23 @@
 </head>
 
 <body>
-  <header>
+  <header class="fixed top0 bgWhite width100 top0">
     <div class="navbar">
       <div class="container flex space-between align-center height100px">
-        <div class="logo-area align-center">
+        <div class="logo-area flex space-between align-center height100px">
           <img src="Assets/img/logo.png" alt="" width="70px" height="60px" />
-          <div class="logo-text">Furnino</div>
+          <div class="logo-text colorBlack">Furnino</div>
         </div>
-        <div class="hamburger flex space-between align-center gap8 column displayNone ">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+        <div class="hamburger space-between align-center gap8 column displayNone">
+          <div class="bar1 bgBlack"></div>
+          <div class="bar2 bgBlack"></div>
+          <div class="bar3 bgBlack"></div>
         </div>
-        <ul class="nav-links relative">
-          <li class="nav-link"><a href="#">Ana Sayfa</a></li>
-          <li class="nav-link magaza-btn">
+        <ul class="nav-links flex space-between align-center height100px">
+          <li class="nav-link height100px flex align-center"><a href="#">Ana Sayfa</a></li>
+          <li class="nav-link height100px flex align-center magaza-btn">
             <a href="#">Mağaza</a>
-            <ul class="magaza-hover-ul">
+            <ul class="magaza-hover-ul displayNone column nowrap absolute bgWhite space-around top100px height350px">
               <li>
                 <a href="#">Oturma Grupları</a>
               </li>
@@ -46,11 +46,11 @@
               </li>
             </ul>
           </li>
-          <li class="nav-link"><a href="#">Hakkımızda</a></li>
-          <li class="nav-link"><a href="#">İletişim</a></li>
+          <li class="nav-link height100px flex align-center"><a href="#">Hakkımızda</a></li>
+          <li class="nav-link height100px flex align-center"><a href="#">İletişim</a></li>
         </ul>
-        <ul class="nav-links-right">
-          <li class="nav-link-right filter-btn">
+        <ul class="nav-links-right gap15 flex space-between align-center height100px">
+          <li class="nav-link-right borderRadius50 pd10 filter-btn">
             <a>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="filter" style="height: 24px; width: 24px">
                 <path
@@ -59,7 +59,7 @@
               </svg>
             </a>
           </li>
-          <li class="nav-link-right">
+          <li class="nav-link-right borderRadius50 pd10">
             <a href="#">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -71,7 +71,7 @@
               </svg>
             </a>
           </li>
-          <li class="nav-link-right">
+          <li class="nav-link-right borderRadius50 pd10">
             <a href="#">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -80,7 +80,7 @@
               </svg>
             </a>
           </li>
-          <li class="nav-link-right">
+          <li class="nav-link-right borderRadius50 pd10">
             <a href="#">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -89,7 +89,7 @@
               </svg>
             </a>
           </li>
-          <li class="nav-link-right">
+          <li class="nav-link-right borderRadius50 pd10">
             <a href="#">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -109,74 +109,72 @@
     </div>
   </header>
 
-  <div class="sliders">
-    <button class="prevBtn sliderBtn">
+  <div class="sliders top100px relative flex width100 mgAuto space-between">
+    <button class="prevBtn sliderBtn BorderNone pd16 cursorPointer ">
       <i class="fa-solid fa-arrow-left"></i>
     </button>
 
-    <div class="slider active sl1">
-      <div class="slider-inner"></div>
+    <div class="slider absolute opacity0 width100  active sl1">
+      <div class="slider-inner bgİmageSettings height100 width100"></div>
     </div>
-    <div class="slider sl2 ">
-      <div class="slider-inner"></div>
+    <div class="slider absolute opacity0 width100  sl2 ">
+      <div class="slider-inner bgİmageSettings height100 width100"></div>
     </div>
-    <div class="slider sl3">
-      <div class="slider-inner"></div>
+    <div class="slider absolute opacity0 width100  sl3">
+      <div class="slider-inner bgİmageSettings height100 width100"></div>
     </div>
-    <div class="indicators">
+    <div class="indicators flex alignEnd gap10 mgBottom10">
       <div class="indicator activeIndicator" id="ind1"></div>
       <div class="indicator " id="ind2"></div>
       <div class="indicator " id="ind3"></div>
     </div>
 
-    <button class="nextBtn sliderBtn">
+    <button class="nextBtn sliderBtn BorderNone pd16 cursorPointer ">
       <i class="fa-solid fa-arrow-right"></i>
     </button>
   </div>
 
-  <!-- <section class="banner">
-      <div class="banner-img"></div>
-      <div class="container">
-        <h1 class="page-title">Mağaza</h1>
-      </div>
-    </section> -->
+  <!-- <section class="banner mgTop100">
+    <div class="banner-img width100 height350px bgİmageSettings absolute"></div>
+    <div class="container flex column justifyCenter align-center height350px">
+      <h1 class="page-title font48px lineHeightNormal colorBlack">Mağaza</h1>
+    </div>
+  </section> -->
 
-
-
-  <section class="products">
-    <div class="container">
-      <div class="categories">
-        <div class="fiyat-dropdown dropdown">
-          <div id="fiyat-btn" class="category-btn">
+  <section class="products flex mt100">
+    <div class="container flex gap32">
+      <div class="categories positionSticky flex column alignSelfStart gap0 mgTop20">
+        <div class="fiyat-dropdown dropdown flex column gap10">
+          <div id="fiyat-btn" class="category-btn colorBlack font18px flex align-center space-between">
             Fiyat
             <span class="material-symbols-outlined arrow"> expand_more </span>
           </div>
-          <div id="fiyat-body" class="dropdown-body">
+          <div id="fiyat-body" class="dropdown-body flex column gap6">
             <div class="fiyat-row text-row">
               <input type="number" class="dropdown-text fiyat-text" id="fiyat-text-düsük" placeholder="En Düşük" />
               <span>-</span>
               <input type="number" class="dropdown-text fiyat-text" id="fiyat-text-yuksek" placeholder="En Yüksek" />
             </div>
-            <div class="fiyat-row check-row">
+            <div class="fiyat-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="0-150" />
               <label for="0-150">0 - 150 TL</label>
             </div>
-            <div class="fiyat-row check-row">
+            <div class="fiyat-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="151-300" />
               <label for="151-300">151 - 300 TL</label>
             </div>
-            <div class="fiyat-row check-row">
+            <div class="fiyat-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="301-500" />
               <label for="301-500">301 - 500 TL</label>
             </div>
-            <div class="fiyat-row check-row">
+            <div class="fiyat-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="501-1000" />
               <label for="501-1000">501 - 1000 TL</label>
             </div>
           </div>
         </div>
-        <div class="kampanya-dropdown dropdown">
-          <div class="kampanya-btn category-btn">
+        <div class="kampanya-dropdown dropdown flex column gap10">
+          <div class="kampanya-btn category-btn colorBlack font18px flex align-center space-between">
             Kampanyalı Ürünler
             <div class="checkbox-apple">
               <input class="yep" id="kampanya-check" type="checkbox" />
@@ -184,66 +182,66 @@
             </div>
           </div>
         </div>
-        <div class="yildiz-dropdown dropdown">
-          <div id="yildiz-btn" class="category-btn">
+        <div class="yildiz-dropdown dropdown flex column gap10">
+          <div id="yildiz-btn" class="category-btn colorBlack font18px flex align-center space-between">
             Yıldız
             <span class="material-symbols-outlined arrow"> expand_more </span>
           </div>
-          <div id="yildiz-body" class="dropdown-body">
-            <div class="yildiz-row check-row">
+          <div id="yildiz-body" class="dropdown-body flex column gap6">
+            <div class="yildiz-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="5*" />
               <label for="5*">
                 5<span class="material-symbols-outlined"> star </span></label>
             </div>
-            <div class="yildiz-row check-row">
+            <div class="yildiz-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="4*" />
               <label for="4*">4<span class="material-symbols-outlined"> star </span></label>
             </div>
-            <div class="yildiz-row check-row">
+            <div class="yildiz-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="3*" />
               <label for="3*">3<span class="material-symbols-outlined"> star </span></label>
             </div>
-            <div class="yildiz-row check-row">
+            <div class="yildiz-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="2*" />
               <label for="2*">2<span class="material-symbols-outlined"> star </span></label>
             </div>
-            <div class="yildiz-row check-row">
+            <div class="yildiz-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="1*" />
               <label for="1*">1<span class="material-symbols-outlined"> star </span></label>
             </div>
           </div>
         </div>
-        <div class="renk-dropdown dropdown">
-          <div id="renk-btn" class="category-btn">
+        <div class="renk-dropdown dropdown flex column gap10">
+          <div id="renk-btn" class="category-btn colorBlack font18px flex align-center space-between">
             Renk
             <span class="material-symbols-outlined arrow"> expand_more </span>
           </div>
-          <div id="renk-body" class="dropdown-body">
-            <div class="renk-row check-row">
+          <div id="renk-body" class="dropdown-body flex column gap6">
+            <div class="renk-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="white" />
               <label for="white">White
                 <div class="white-circle color-circle" style="background-color: white"></div>
               </label>
             </div>
-            <div class="renk-row check-row">
+            <div class="renk-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="black" />
               <label for="black">Black
                 <div class="black-circle color-circle" style="background-color: black"></div>
               </label>
             </div>
-            <div class="renk-row check-row">
+            <div class="renk-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="gray" />
               <label for="gray">Gray
                 <div class="gray-circle color-circle" style="background-color: gray"></div>
               </label>
             </div>
-            <div class="renk-row check-row">
+            <div class="renk-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="yellow" />
               <label for="yellow">Yellow
                 <div class="yellow-circle color-circle" style="background-color: yellow"></div>
               </label>
             </div>
-            <div class="renk-row check-row">
+            <div class="renk-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="blue" />
               <label for="blue">Blue
                 <div class="blue-circle color-circle" style="background-color: blue"></div>
@@ -251,97 +249,99 @@
             </div>
           </div>
         </div>
-        <div class="malzeme-dropdown dropdown">
-          <div id="malzeme-btn" class="category-btn">
+        <div class="malzeme-dropdown dropdown flex column gap10">
+          <div id="malzeme-btn" class="category-btn colorBlack font18px flex align-center space-between">
             Malzeme
             <span class="material-symbols-outlined arrow"> expand_more </span>
           </div>
-          <div id="malzeme-body" class="dropdown-body">
-            <div class="malzeme-row check-row">
+          <div id="malzeme-body" class="dropdown-body flex column gap6">
+            <div class="malzeme-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="ahsap" />
               <label for="ahsap">Ahşap </label>
             </div>
-            <div class="malzeme-row check-row">
+            <div class="malzeme-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="plastik" />
               <label for="plastik">Plastik</label>
             </div>
-            <div class="malzeme-row check-row">
+            <div class="malzeme-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="cam" />
               <label for="cam">Cam</label>
             </div>
-            <div class="malzeme-row check-row">
+            <div class="malzeme-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="metal" />
               <label for="metal">Metal</label>
             </div>
-            <div class="malzeme-row check-row">
+            <div class="malzeme-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="mdf" />
               <label for="mdf">Mdf</label>
             </div>
-            <div class="malzeme-row check-row">
+            <div class="malzeme-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="suntalam" />
               <label for="suntalam">Suntalam</label>
             </div>
-            <div class="malzeme-row check-row">
+            <div class="malzeme-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="tekstil" />
               <label for="tekstil">Tekstil</label>
             </div>
-            <div class="malzeme-row check-row">
+            <div class="malzeme-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="hakikideri" />
               <label for="hakikideri">Hakiki Deri</label>
             </div>
           </div>
         </div>
-        <div class="parca-dropdown dropdown">
-          <div id="parca-btn" class="category-btn">
+        <div class="parca-dropdown dropdown flex column gap10">
+          <div id="parca-btn" class="category-btn colorBlack font18px flex align-center space-between">
             Parça Sayısı
             <span class="material-symbols-outlined arrow"> expand_more </span>
           </div>
-          <div id="parca-body" class="dropdown-body">
-            <div class="parca-row check-row">
+          <div id="parca-body" class="dropdown-body flex column gap6">
+            <div class="parca-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="1parca" />
               <label for="1parca">1 </label>
             </div>
-            <div class="parca-row check-row">
+            <div class="parca-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="2parca" />
               <label for="2parca">2'li</label>
             </div>
-            <div class="parca-row check-row">
+            <div class="parca-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="3parca" />
               <label for="3parca">3'lü</label>
             </div>
-            <div class="parca-row check-row">
+            <div class="parca-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="4parca" />
               <label for="4parca">4'lü</label>
             </div>
-            <div class="parca-row check-row">
+            <div class="parca-row check-row flex align-center gap15 font16px fontPoppins">
               <input type="checkbox" id="5parca" />
               <label for="5parca">5'li</label>
             </div>
           </div>
         </div>
       </div>
-      <div class="urun-cardlar">
-        <div class="card">
-          <div class="card-img">
+      <div class="urun-cardlar displayGrid width100 pdTop30">
+        <div class="card zIndex1 ">
+          <div class="card-img width100 zIndex1 relative overflowHidden">
             <div class="disc">
               <p>İndirim</p>
             </div>
-            <div class="fav">
+            <div class="fav absolute bgWhite colorB88E2F borderRadius50 pd10 flex justifyCenter opacity0">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M12.0122 5.57169L10.9252 4.48469C8.77734 2.33681 5.29493 2.33681 3.14705 4.48469C0.999162 6.63258 0.999162 10.115 3.14705 12.2629L11.9859 21.1017L11.9877 21.0999L12.014 21.1262L20.8528 12.2874C23.0007 10.1395 23.0007 6.65711 20.8528 4.50923C18.705 2.36134 15.2226 2.36134 13.0747 4.50923L12.0122 5.57169ZM11.9877 18.2715L16.9239 13.3352L18.3747 11.9342L18.3762 11.9356L19.4386 10.8732C20.8055 9.50635 20.8055 7.29028 19.4386 5.92344C18.0718 4.55661 15.8557 4.55661 14.4889 5.92344L12.0133 8.39904L12.006 8.3918L12.005 8.39287L9.51101 5.89891C8.14417 4.53207 5.92809 4.53207 4.56126 5.89891C3.19442 7.26574 3.19442 9.48182 4.56126 10.8487L7.10068 13.3881L7.10248 13.3863L11.9877 18.2715Z"
                   fill="currentColor" />
               </svg>
             </div>
-            <img class="front-img" src="Assets/img/1.png" alt="" width="285px" height="300px" />
-            <img class="back-img" src="Assets/img/2.png" alt="" width="285px" height="300px" />
+            <img class="front-img width100 objectFitContain zIndex1" src="Assets/img/1.png" alt="" width="285px"
+              height="300px" />
+            <img class="back-img absolute top0 " src="Assets/img/2.png" alt="" width="285px" height="300px" />
           </div>
-          <div class="card-body">
+          <div class="card-body flex column gap15 pd16">
             <h5 class="card-title">Respira</h5>
             <p class="card-text">Outdoor bar table and stool</p>
-            <div class="price-add">
+            <div class="price-add flex flexRow space-between">
               <h6 class="card-price">59.99$</h6>
-              <button class="cart-btn btn">
+              <button
+                class="cart-btn btn btn BorderNone opacity0 bgWhite colorB88E2F font16px width25 flex justifyCenter align-center gap8 ">
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
@@ -355,7 +355,8 @@
                 </svg>
               </button>
             </div>
-            <button class="spec-btn btn btn">
+            <button
+              class="spec-btn height48px opacity0 btn btn bgWhite colorB88E2F font16px width100 flex justifyCenter align-center gap8 ">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
@@ -365,28 +366,30 @@
             </button>
           </div>
         </div>
-        <div class="card">
-          <div class="card-img">
+        <div class="card zIndex1 ">
+          <div class="card-img width100 zIndex1 relative overflowHidden">
             <div class="disc">
               <p>İndirim</p>
             </div>
-            <div class="fav">
+            <div class="fav absolute bgWhite colorB88E2F borderRadius50 pd10 flex justifyCenter opacity0">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M12.0122 5.57169L10.9252 4.48469C8.77734 2.33681 5.29493 2.33681 3.14705 4.48469C0.999162 6.63258 0.999162 10.115 3.14705 12.2629L11.9859 21.1017L11.9877 21.0999L12.014 21.1262L20.8528 12.2874C23.0007 10.1395 23.0007 6.65711 20.8528 4.50923C18.705 2.36134 15.2226 2.36134 13.0747 4.50923L12.0122 5.57169ZM11.9877 18.2715L16.9239 13.3352L18.3747 11.9342L18.3762 11.9356L19.4386 10.8732C20.8055 9.50635 20.8055 7.29028 19.4386 5.92344C18.0718 4.55661 15.8557 4.55661 14.4889 5.92344L12.0133 8.39904L12.006 8.3918L12.005 8.39287L9.51101 5.89891C8.14417 4.53207 5.92809 4.53207 4.56126 5.89891C3.19442 7.26574 3.19442 9.48182 4.56126 10.8487L7.10068 13.3881L7.10248 13.3863L11.9877 18.2715Z"
                   fill="currentColor" />
               </svg>
             </div>
-            <img class="front-img" src="Assets/img/3.png" alt="" width="285px" height="300px" />
-            <img class="back-img" src="Assets/img/4.png" alt="" width="285px" height="300px" />
+            <img class="front-img width100 objectFitContain zIndex1" src="Assets/img/3.png" alt="" width="285px"
+              height="300px" />
+            <img class="back-img absolute top0 " src="Assets/img/4.png" alt="" width="285px" height="300px" />
           </div>
-          <div class="card-body">
+          <div class="card-body flex column gap15 pd16">
             <h5 class="card-title">Respira</h5>
             <p class="card-text">Outdoor bar table and stool</p>
-            <div class="price-add">
+            <div class="price-add flex flexRow space-between">
               <h6 class="card-price">59.99$</h6>
 
-              <button class="cart-btn btn">
+              <button
+                class="cart-btn btn btn BorderNone opacity0 bgWhite colorB88E2F font16px width25 flex justifyCenter align-center gap8  ">
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
@@ -401,7 +404,8 @@
               </button>
             </div>
 
-            <button class="spec-btn btn">
+            <button
+              class="spec-btn height48px opacity0 btn btn bgWhite colorB88E2F font16px width100 flex justifyCenter align-center gap8 ">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
@@ -411,28 +415,30 @@
             </button>
           </div>
         </div>
-        <div class="card">
-          <div class="card-img">
+        <div class="card zIndex1 ">
+          <div class="card-img width100 zIndex1 relative overflowHidden">
             <div class="disc">
               <p>İndirim</p>
             </div>
-            <div class="fav">
+            <div class="fav absolute bgWhite colorB88E2F borderRadius50 pd10 flex justifyCenter opacity0">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M12.0122 5.57169L10.9252 4.48469C8.77734 2.33681 5.29493 2.33681 3.14705 4.48469C0.999162 6.63258 0.999162 10.115 3.14705 12.2629L11.9859 21.1017L11.9877 21.0999L12.014 21.1262L20.8528 12.2874C23.0007 10.1395 23.0007 6.65711 20.8528 4.50923C18.705 2.36134 15.2226 2.36134 13.0747 4.50923L12.0122 5.57169ZM11.9877 18.2715L16.9239 13.3352L18.3747 11.9342L18.3762 11.9356L19.4386 10.8732C20.8055 9.50635 20.8055 7.29028 19.4386 5.92344C18.0718 4.55661 15.8557 4.55661 14.4889 5.92344L12.0133 8.39904L12.006 8.3918L12.005 8.39287L9.51101 5.89891C8.14417 4.53207 5.92809 4.53207 4.56126 5.89891C3.19442 7.26574 3.19442 9.48182 4.56126 10.8487L7.10068 13.3881L7.10248 13.3863L11.9877 18.2715Z"
                   fill="currentColor" />
               </svg>
             </div>
-            <img class="front-img" src="Assets/img/5.png" alt="" width="285px" height="300px" />
-            <img class="back-img" src="Assets/img/6.png" alt="" width="285px" height="300px" />
+            <img class="front-img width100 objectFitContain zIndex1" src="Assets/img/5.png" alt="" width="285px"
+              height="300px" />
+            <img class="back-img absolute top0 " src="Assets/img/6.png" alt="" width="285px" height="300px" />
           </div>
-          <div class="card-body">
+          <div class="card-body flex column gap15 pd16">
             <h5 class="card-title">Respira</h5>
             <p class="card-text">Outdoor bar table and stool</p>
-            <div class="price-add">
+            <div class="price-add flex flexRow space-between">
               <h6 class="card-price">59.99$</h6>
 
-              <button class="cart-btn btn">
+              <button
+                class="cart-btn btn btn BorderNone opacity0 bgWhite colorB88E2F font16px width25 flex justifyCenter align-center gap8 ">
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
@@ -447,7 +453,8 @@
               </button>
             </div>
 
-            <button class="spec-btn btn">
+            <button
+              class="spec-btn height48px opacity0 btn btn bgWhite colorB88E2F font16px width100 flex justifyCenter align-center gap8 ">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
@@ -457,28 +464,30 @@
             </button>
           </div>
         </div>
-        <div class="card">
-          <div class="card-img">
+        <div class="card zIndex1 ">
+          <div class="card-img width100 zIndex1 relative overflowHidden">
             <div class="disc">
               <p>İndirim</p>
             </div>
-            <div class="fav">
+            <div class="fav absolute bgWhite colorB88E2F borderRadius50 pd10 flex justifyCenter opacity0">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M12.0122 5.57169L10.9252 4.48469C8.77734 2.33681 5.29493 2.33681 3.14705 4.48469C0.999162 6.63258 0.999162 10.115 3.14705 12.2629L11.9859 21.1017L11.9877 21.0999L12.014 21.1262L20.8528 12.2874C23.0007 10.1395 23.0007 6.65711 20.8528 4.50923C18.705 2.36134 15.2226 2.36134 13.0747 4.50923L12.0122 5.57169ZM11.9877 18.2715L16.9239 13.3352L18.3747 11.9342L18.3762 11.9356L19.4386 10.8732C20.8055 9.50635 20.8055 7.29028 19.4386 5.92344C18.0718 4.55661 15.8557 4.55661 14.4889 5.92344L12.0133 8.39904L12.006 8.3918L12.005 8.39287L9.51101 5.89891C8.14417 4.53207 5.92809 4.53207 4.56126 5.89891C3.19442 7.26574 3.19442 9.48182 4.56126 10.8487L7.10068 13.3881L7.10248 13.3863L11.9877 18.2715Z"
                   fill="currentColor" />
               </svg>
             </div>
-            <img class="front-img" src="Assets/img/7.png" alt="" width="285px" height="300px" />
-            <img class="back-img" src="Assets/img/8.png" alt="" width="285px" height="300px" />
+            <img class="front-img width100 objectFitContain zIndex1" src="Assets/img/7.png" alt="" width="285px"
+              height="300px" />
+            <img class="back-img absolute top0 " src="Assets/img/8.png" alt="" width="285px" height="300px" />
           </div>
-          <div class="card-body">
+          <div class="card-body flex column gap15 pd16">
             <h5 class="card-title">Respira</h5>
             <p class="card-text">Outdoor bar table and stool</p>
-            <div class="price-add">
+            <div class="price-add flex flexRow space-between">
               <h6 class="card-price">59.99$</h6>
 
-              <button class="cart-btn btn">
+              <button
+                class="cart-btn btn btn BorderNone opacity0 bgWhite colorB88E2F font16px width25 flex justifyCenter align-center gap8 ">
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
@@ -493,7 +502,8 @@
               </button>
             </div>
 
-            <button class="spec-btn btn">
+            <button
+              class="spec-btn height48px opacity0 btn btn bgWhite colorB88E2F font16px width100 flex justifyCenter align-center gap8 ">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
@@ -503,28 +513,30 @@
             </button>
           </div>
         </div>
-        <div class="card">
-          <div class="card-img">
+        <div class="card zIndex1 ">
+          <div class="card-img width100 zIndex1 relative overflowHidden">
             <div class="disc">
               <p>İndirim</p>
             </div>
-            <div class="fav">
+            <div class="fav absolute bgWhite colorB88E2F borderRadius50 pd10 flex justifyCenter opacity0">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M12.0122 5.57169L10.9252 4.48469C8.77734 2.33681 5.29493 2.33681 3.14705 4.48469C0.999162 6.63258 0.999162 10.115 3.14705 12.2629L11.9859 21.1017L11.9877 21.0999L12.014 21.1262L20.8528 12.2874C23.0007 10.1395 23.0007 6.65711 20.8528 4.50923C18.705 2.36134 15.2226 2.36134 13.0747 4.50923L12.0122 5.57169ZM11.9877 18.2715L16.9239 13.3352L18.3747 11.9342L18.3762 11.9356L19.4386 10.8732C20.8055 9.50635 20.8055 7.29028 19.4386 5.92344C18.0718 4.55661 15.8557 4.55661 14.4889 5.92344L12.0133 8.39904L12.006 8.3918L12.005 8.39287L9.51101 5.89891C8.14417 4.53207 5.92809 4.53207 4.56126 5.89891C3.19442 7.26574 3.19442 9.48182 4.56126 10.8487L7.10068 13.3881L7.10248 13.3863L11.9877 18.2715Z"
                   fill="currentColor" />
               </svg>
             </div>
-            <img class="front-img" src="Assets/img/image 1.png" alt="" width="285px" height="300px" />
-            <img class="back-img" src="Assets/img/image 2.png" alt="" width="285px" height="300px" />
+            <img class="front-img width100 objectFitContain zIndex1" src="Assets/img/image 1.png" alt="" width="285px"
+              height="300px" />
+            <img class="back-img absolute top0 " src="Assets/img/image 2.png" alt="" width="285px" height="300px" />
           </div>
-          <div class="card-body">
+          <div class="card-body flex column gap15 pd16">
             <h5 class="card-title">Respira</h5>
             <p class="card-text">Outdoor bar table and stool</p>
-            <div class="price-add">
+            <div class="price-add flex flexRow space-between">
               <h6 class="card-price">59.99$</h6>
 
-              <button class="cart-btn btn">
+              <button
+                class="cart-btn btn btn BorderNone opacity0 bgWhite colorB88E2F font16px width25 flex justifyCenter align-center gap8 ">
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
@@ -539,7 +551,8 @@
               </button>
             </div>
 
-            <button class="spec-btn btn">
+            <button
+              class="spec-btn height48px opacity0 btn btn bgWhite colorB88E2F font16px width100 flex justifyCenter align-center gap8 ">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
@@ -549,28 +562,30 @@
             </button>
           </div>
         </div>
-        <div class="card">
-          <div class="card-img">
+        <div class="card zIndex1 ">
+          <div class="card-img width100 zIndex1 relative overflowHidden">
             <div class="disc">
               <p>İndirim</p>
             </div>
-            <div class="fav">
+            <div class="fav absolute bgWhite colorB88E2F borderRadius50 pd10 flex justifyCenter opacity0">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M12.0122 5.57169L10.9252 4.48469C8.77734 2.33681 5.29493 2.33681 3.14705 4.48469C0.999162 6.63258 0.999162 10.115 3.14705 12.2629L11.9859 21.1017L11.9877 21.0999L12.014 21.1262L20.8528 12.2874C23.0007 10.1395 23.0007 6.65711 20.8528 4.50923C18.705 2.36134 15.2226 2.36134 13.0747 4.50923L12.0122 5.57169ZM11.9877 18.2715L16.9239 13.3352L18.3747 11.9342L18.3762 11.9356L19.4386 10.8732C20.8055 9.50635 20.8055 7.29028 19.4386 5.92344C18.0718 4.55661 15.8557 4.55661 14.4889 5.92344L12.0133 8.39904L12.006 8.3918L12.005 8.39287L9.51101 5.89891C8.14417 4.53207 5.92809 4.53207 4.56126 5.89891C3.19442 7.26574 3.19442 9.48182 4.56126 10.8487L7.10068 13.3881L7.10248 13.3863L11.9877 18.2715Z"
                   fill="currentColor" />
               </svg>
             </div>
-            <img class="front-img" src="Assets/img/image 3.png" alt="" width="285px" height="300px" />
-            <img class="back-img" src="Assets/img/image 4.png" alt="" width="285px" height="300px" />
+            <img class="front-img width100 objectFitContain zIndex1" src="Assets/img/image 3.png" alt="" width="285px"
+              height="300px" />
+            <img class="back-img absolute top0 " src="Assets/img/image 4.png" alt="" width="285px" height="300px" />
           </div>
-          <div class="card-body">
+          <div class="card-body flex column gap15 pd16">
             <h5 class="card-title">Respira</h5>
             <p class="card-text">Outdoor bar table and stool</p>
-            <div class="price-add">
+            <div class="price-add flex flexRow space-between">
               <h6 class="card-price">59.99$</h6>
 
-              <button class="cart-btn btn">
+              <button
+                class="cart-btn btn btn BorderNone opacity0 bgWhite colorB88E2F font16px width25 flex justifyCenter align-center gap8 ">
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
@@ -585,7 +600,8 @@
               </button>
             </div>
 
-            <button class="spec-btn btn">
+            <button
+              class="spec-btn height48px opacity0 btn btn bgWhite colorB88E2F font16px width100 flex justifyCenter align-center gap8 ">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
@@ -595,34 +611,36 @@
             </button>
           </div>
         </div>
-        <div class="card">
-          <div class="card-img">
+        <div class="card zIndex1 ">
+          <div class="card-img width100 zIndex1 relative overflowHidden">
             <div class="disc">
               <p>İndirim</p>
             </div>
-            <div class="fav">
+            <div class="fav absolute bgWhite colorB88E2F borderRadius50 pd10 flex justifyCenter opacity0">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M12.0122 5.57169L10.9252 4.48469C8.77734 2.33681 5.29493 2.33681 3.14705 4.48469C0.999162 6.63258 0.999162 10.115 3.14705 12.2629L11.9859 21.1017L11.9877 21.0999L12.014 21.1262L20.8528 12.2874C23.0007 10.1395 23.0007 6.65711 20.8528 4.50923C18.705 2.36134 15.2226 2.36134 13.0747 4.50923L12.0122 5.57169ZM11.9877 18.2715L16.9239 13.3352L18.3747 11.9342L18.3762 11.9356L19.4386 10.8732C20.8055 9.50635 20.8055 7.29028 19.4386 5.92344C18.0718 4.55661 15.8557 4.55661 14.4889 5.92344L12.0133 8.39904L12.006 8.3918L12.005 8.39287L9.51101 5.89891C8.14417 4.53207 5.92809 4.53207 4.56126 5.89891C3.19442 7.26574 3.19442 9.48182 4.56126 10.8487L7.10068 13.3881L7.10248 13.3863L11.9877 18.2715Z"
                   fill="currentColor" />
               </svg>
             </div>
-            <div class="fav">
+            <div class="fav absolute bgWhite colorB88E2F borderRadius50 pd10 flex justifyCenter opacity0">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M12.0122 5.57169L10.9252 4.48469C8.77734 2.33681 5.29493 2.33681 3.14705 4.48469C0.999162 6.63258 0.999162 10.115 3.14705 12.2629L11.9859 21.1017L11.9877 21.0999L12.014 21.1262L20.8528 12.2874C23.0007 10.1395 23.0007 6.65711 20.8528 4.50923C18.705 2.36134 15.2226 2.36134 13.0747 4.50923L12.0122 5.57169ZM11.9877 18.2715L16.9239 13.3352L18.3747 11.9342L18.3762 11.9356L19.4386 10.8732C20.8055 9.50635 20.8055 7.29028 19.4386 5.92344C18.0718 4.55661 15.8557 4.55661 14.4889 5.92344L12.0133 8.39904L12.006 8.3918L12.005 8.39287L9.51101 5.89891C8.14417 4.53207 5.92809 4.53207 4.56126 5.89891C3.19442 7.26574 3.19442 9.48182 4.56126 10.8487L7.10068 13.3881L7.10248 13.3863L11.9877 18.2715Z"
                   fill="currentColor" />
               </svg>
             </div>
-            <img class="front-img" src="Assets/img/1.png" alt="" width="285px" height="300px" />
-            <img class="back-img" src="Assets/img/2.png" alt="" width="285px" height="300px" />
+            <img class="front-img width100 objectFitContain zIndex1" src="Assets/img/1.png" alt="" width="285px"
+              height="300px" />
+            <img class="back-img absolute top0 " src="Assets/img/2.png" alt="" width="285px" height="300px" />
           </div>
-          <div class="card-body">
+          <div class="card-body flex column gap15 pd16">
             <h5 class="card-title">Respira</h5>
             <p class="card-text">Outdoor bar table and stool</p>
-            <div class="price-add">
+            <div class="price-add flex flexRow space-between">
               <h6 class="card-price">59.99$</h6>
-              <button class="cart-btn btn">
+              <button
+                class="cart-btn btn btn BorderNone opacity0 bgWhite colorB88E2F font16px width25 flex justifyCenter align-center gap8">
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
@@ -636,7 +654,8 @@
                 </svg>
               </button>
             </div>
-            <button class="spec-btn btn btn">
+            <button
+              class="spec-btn height48px opacity0 btn btn bgWhite colorB88E2F font16px width100 flex justifyCenter align-center gap8 ">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
@@ -646,28 +665,30 @@
             </button>
           </div>
         </div>
-        <div class="card">
-          <div class="card-img">
+        <div class="card zIndex1 ">
+          <div class="card-img width100 zIndex1 relative overflowHidden">
             <div class="disc">
               <p>İndirim</p>
             </div>
-            <div class="fav">
+            <div class="fav absolute bgWhite colorB88E2F borderRadius50 pd10 flex justifyCenter opacity0">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M12.0122 5.57169L10.9252 4.48469C8.77734 2.33681 5.29493 2.33681 3.14705 4.48469C0.999162 6.63258 0.999162 10.115 3.14705 12.2629L11.9859 21.1017L11.9877 21.0999L12.014 21.1262L20.8528 12.2874C23.0007 10.1395 23.0007 6.65711 20.8528 4.50923C18.705 2.36134 15.2226 2.36134 13.0747 4.50923L12.0122 5.57169ZM11.9877 18.2715L16.9239 13.3352L18.3747 11.9342L18.3762 11.9356L19.4386 10.8732C20.8055 9.50635 20.8055 7.29028 19.4386 5.92344C18.0718 4.55661 15.8557 4.55661 14.4889 5.92344L12.0133 8.39904L12.006 8.3918L12.005 8.39287L9.51101 5.89891C8.14417 4.53207 5.92809 4.53207 4.56126 5.89891C3.19442 7.26574 3.19442 9.48182 4.56126 10.8487L7.10068 13.3881L7.10248 13.3863L11.9877 18.2715Z"
                   fill="currentColor" />
               </svg>
             </div>
-            <img class="front-img" src="Assets/img/3.png" alt="" width="285px" height="300px" />
-            <img class="back-img" src="Assets/img/4.png" alt="" width="285px" height="300px" />
+            <img class="front-img width100 objectFitContain zIndex1" src="Assets/img/3.png" alt="" width="285px"
+              height="300px" />
+            <img class="back-img absolute top0 " src="Assets/img/4.png" alt="" width="285px" height="300px" />
           </div>
-          <div class="card-body">
+          <div class="card-body flex column gap15 pd16">
             <h5 class="card-title">Respira</h5>
             <p class="card-text">Outdoor bar table and stool</p>
-            <div class="price-add">
+            <div class="price-add flex flexRow space-between">
               <h6 class="card-price">59.99$</h6>
 
-              <button class="cart-btn btn">
+              <button
+                class="cart-btn btn btn BorderNone opacity0 bgWhite colorB88E2F font16px width25 flex justifyCenter align-center gap8 ">
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
@@ -682,7 +703,8 @@
               </button>
             </div>
 
-            <button class="spec-btn btn">
+            <button
+              class="spec-btn height48px opacity0 btn btn bgWhite colorB88E2F font16px width100 flex justifyCenter align-center gap8 ">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
@@ -692,28 +714,30 @@
             </button>
           </div>
         </div>
-        <div class="card">
-          <div class="card-img">
+        <div class="card zIndex1 ">
+          <div class="card-img width100 zIndex1 relative overflowHidden">
             <div class="disc">
               <p>İndirim</p>
             </div>
-            <div class="fav">
+            <div class="fav absolute bgWhite colorB88E2F borderRadius50 pd10 flex justifyCenter opacity0">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M12.0122 5.57169L10.9252 4.48469C8.77734 2.33681 5.29493 2.33681 3.14705 4.48469C0.999162 6.63258 0.999162 10.115 3.14705 12.2629L11.9859 21.1017L11.9877 21.0999L12.014 21.1262L20.8528 12.2874C23.0007 10.1395 23.0007 6.65711 20.8528 4.50923C18.705 2.36134 15.2226 2.36134 13.0747 4.50923L12.0122 5.57169ZM11.9877 18.2715L16.9239 13.3352L18.3747 11.9342L18.3762 11.9356L19.4386 10.8732C20.8055 9.50635 20.8055 7.29028 19.4386 5.92344C18.0718 4.55661 15.8557 4.55661 14.4889 5.92344L12.0133 8.39904L12.006 8.3918L12.005 8.39287L9.51101 5.89891C8.14417 4.53207 5.92809 4.53207 4.56126 5.89891C3.19442 7.26574 3.19442 9.48182 4.56126 10.8487L7.10068 13.3881L7.10248 13.3863L11.9877 18.2715Z"
                   fill="currentColor" />
               </svg>
             </div>
-            <img class="front-img" src="Assets/img/5.png" alt="" width="285px" height="300px" />
-            <img class="back-img" src="Assets/img/6.png" alt="" width="285px" height="300px" />
+            <img class="front-img width100 objectFitContain zIndex1" src="Assets/img/5.png" alt="" width="285px"
+              height="300px" />
+            <img class="back-img absolute top0 " src="Assets/img/6.png" alt="" width="285px" height="300px" />
           </div>
-          <div class="card-body">
+          <div class="card-body flex column gap15 pd16">
             <h5 class="card-title">Respira</h5>
             <p class="card-text">Outdoor bar table and stool</p>
-            <div class="price-add">
+            <div class="price-add flex flexRow space-between">
               <h6 class="card-price">59.99$</h6>
 
-              <button class="cart-btn btn">
+              <button
+                class="cart-btn btn btn BorderNone opacity0 bgWhite colorB88E2F font16px width25 flex justifyCenter align-center gap8 ">
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
@@ -728,7 +752,8 @@
               </button>
             </div>
 
-            <button class="spec-btn btn">
+            <button
+              class="spec-btn height48px opacity0 btn btn bgWhite colorB88E2F font16px width100 flex justifyCenter align-center gap8 ">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
@@ -738,28 +763,30 @@
             </button>
           </div>
         </div>
-        <div class="card">
-          <div class="card-img">
+        <div class="card zIndex1 ">
+          <div class="card-img width100 zIndex1 relative overflowHidden">
             <div class="disc">
               <p>İndirim</p>
             </div>
-            <div class="fav">
+            <div class="fav absolute bgWhite colorB88E2F borderRadius50 pd10 flex justifyCenter opacity0">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M12.0122 5.57169L10.9252 4.48469C8.77734 2.33681 5.29493 2.33681 3.14705 4.48469C0.999162 6.63258 0.999162 10.115 3.14705 12.2629L11.9859 21.1017L11.9877 21.0999L12.014 21.1262L20.8528 12.2874C23.0007 10.1395 23.0007 6.65711 20.8528 4.50923C18.705 2.36134 15.2226 2.36134 13.0747 4.50923L12.0122 5.57169ZM11.9877 18.2715L16.9239 13.3352L18.3747 11.9342L18.3762 11.9356L19.4386 10.8732C20.8055 9.50635 20.8055 7.29028 19.4386 5.92344C18.0718 4.55661 15.8557 4.55661 14.4889 5.92344L12.0133 8.39904L12.006 8.3918L12.005 8.39287L9.51101 5.89891C8.14417 4.53207 5.92809 4.53207 4.56126 5.89891C3.19442 7.26574 3.19442 9.48182 4.56126 10.8487L7.10068 13.3881L7.10248 13.3863L11.9877 18.2715Z"
                   fill="currentColor" />
               </svg>
             </div>
-            <img class="front-img" src="Assets/img/7.png" alt="" width="285px" height="300px" />
-            <img class="back-img" src="Assets/img/8.png" alt="" width="285px" height="300px" />
+            <img class="front-img width100 objectFitContain zIndex1" src="Assets/img/7.png" alt="" width="285px"
+              height="300px" />
+            <img class="back-img absolute top0 " src="Assets/img/8.png" alt="" width="285px" height="300px" />
           </div>
-          <div class="card-body">
+          <div class="card-body flex column gap15 pd16">
             <h5 class="card-title">Respira</h5>
             <p class="card-text">Outdoor bar table and stool</p>
-            <div class="price-add">
+            <div class="price-add flex flexRow space-between">
               <h6 class="card-price">59.99$</h6>
 
-              <button class="cart-btn btn">
+              <button
+                class="cart-btn btn btn BorderNone opacity0 bgWhite colorB88E2F font16px width25 flex justifyCenter align-center gap8 ">
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
@@ -774,7 +801,8 @@
               </button>
             </div>
 
-            <button class="spec-btn btn">
+            <button
+              class="spec-btn height48px opacity0 btn btn bgWhite colorB88E2F font16px width100 flex justifyCenter align-center gap8 ">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
@@ -784,28 +812,30 @@
             </button>
           </div>
         </div>
-        <div class="card">
-          <div class="card-img">
+        <div class="card zIndex1 ">
+          <div class="card-img width100 zIndex1 relative overflowHidden">
             <div class="disc">
               <p>İndirim</p>
             </div>
-            <div class="fav">
+            <div class="fav absolute bgWhite colorB88E2F borderRadius50 pd10 flex justifyCenter opacity0">
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M12.0122 5.57169L10.9252 4.48469C8.77734 2.33681 5.29493 2.33681 3.14705 4.48469C0.999162 6.63258 0.999162 10.115 3.14705 12.2629L11.9859 21.1017L11.9877 21.0999L12.014 21.1262L20.8528 12.2874C23.0007 10.1395 23.0007 6.65711 20.8528 4.50923C18.705 2.36134 15.2226 2.36134 13.0747 4.50923L12.0122 5.57169ZM11.9877 18.2715L16.9239 13.3352L18.3747 11.9342L18.3762 11.9356L19.4386 10.8732C20.8055 9.50635 20.8055 7.29028 19.4386 5.92344C18.0718 4.55661 15.8557 4.55661 14.4889 5.92344L12.0133 8.39904L12.006 8.3918L12.005 8.39287L9.51101 5.89891C8.14417 4.53207 5.92809 4.53207 4.56126 5.89891C3.19442 7.26574 3.19442 9.48182 4.56126 10.8487L7.10068 13.3881L7.10248 13.3863L11.9877 18.2715Z"
                   fill="currentColor" />
               </svg>
             </div>
-            <img class="front-img" src="Assets/img/image 1.png" alt="" width="285px" height="300px" />
-            <img class="back-img" src="Assets/img/image 2.png" alt="" width="285px" height="300px" />
+            <img class="front-img width100 objectFitContain zIndex1" src="Assets/img/image 1.png" alt="" width="285px"
+              height="300px" />
+            <img class="back-img absolute top0 " src="Assets/img/image 2.png" alt="" width="285px" height="300px" />
           </div>
-          <div class="card-body">
+          <div class="card-body flex column gap15 pd16">
             <h5 class="card-title">Respira</h5>
             <p class="card-text">Outdoor bar table and stool</p>
-            <div class="price-add">
+            <div class="price-add flex flexRow space-between">
               <h6 class="card-price">59.99$</h6>
 
-              <button class="cart-btn btn">
+              <button
+                class="cart-btn btn btn BorderNone opacity0 bgWhite colorB88E2F font16px width25 flex justifyCenter align-center gap8 ">
                 <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M5.79166 2H1V4H4.2184L6.9872 16.6776H7V17H20V16.7519L22.1932 7.09095L22.5308 6H6.6552L6.08485 3.38852L5.79166 2ZM19.9869 8H7.092L8.62081 15H18.3978L19.9869 8Z"
@@ -820,7 +850,8 @@
               </button>
             </div>
 
-            <button class="spec-btn btn">
+            <button
+              class="spec-btn height48px opacity0 btn btn bgWhite colorB88E2F font16px width100 flex justifyCenter align-center gap8 ">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
@@ -833,12 +864,15 @@
       </div>
     </div>
   </section>
-  <div class="our-products">
-    <div class="our-products-inner">
-      <img src="Assets/img/ourpr1.PNG" style="height: 100%; width: 100%;" alt="">
-      <div class="opr-text">
-        <h2>Oturma Grupları</h2>
-        <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <div class="our-products flex mt100 overflowHidden">
+    <div class="our-products-inner flex1-0 relative flex column justifEnd">
+      <img class="absolute height100 width100 objectFitCover" src="Assets/img/ourpr1.PNG"
+        style="height: 100%; width: 100%;" alt="">
+      <div class="opr-text width100 height100px pdLeft15 pdBottom15 displayNone">
+        <h2 class="font28px colorBlack lineHeightNormal">Oturma Grupları</h2>
+        <button class="flex align-center space-between gap6 BorderNone colorWhite BgB88E2F font16px widthFit"><svg
+            width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
               fill="currentColor" />
@@ -846,11 +880,12 @@
           Hepsini İncele</button>
       </div>
     </div>
-    <div class="our-products-inner">
-      <img src="Assets/img/ourpr2.PNG" style="height: 530px;" alt="">
-      <div class="opr-text">
-        <h2>Yemek Masası Grupları</h2>
-        <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="our-products-inner flex1-0 relative flex column justifEnd">
+      <img class="absolute height100 width100 objectFitCover" src="Assets/img/ourpr2.PNG" style="height: 530px;" alt="">
+      <div class="opr-text width100 height100px pdLeft15 pdBottom15 displayNone">
+        <h2 class="font28px colorBlack lineHeightNormal">Yemek Masası Grupları</h2>
+        <button class="flex align-center space-between gap6 BorderNone colorWhite BgB88E2F font16px widthFit"><svg
+            width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
               fill="currentColor" />
@@ -858,11 +893,13 @@
           Hepsini İncele</button>
       </div>
     </div>
-    <div class="our-products-inner" id="nothvr">
-      <img src="Assets/img/ourpr3.webp" style="height: 530px;" alt="">
-      <div class="opr-text" id="oprText-none">
-        <h2>Bahçe Mobilyaları</h2>
-        <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="our-products-inner flex1-0 relative flex column justifEnd" id="nothvr">
+      <img class="absolute height100 width100 objectFitCover" src="Assets/img/ourpr3.webp" style="height: 530px;"
+        alt="">
+      <div class="opr-text width100 height100px pdLeft15 pdBottom15 displayNone" id="oprText-none">
+        <h2 class="font28px colorBlack lineHeightNormal">Bahçe Mobilyaları</h2>
+        <button class="flex align-center space-between gap6 BorderNone colorWhite BgB88E2F font16px widthFit"><svg
+            width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
               fill="currentColor" />
@@ -870,11 +907,13 @@
           Hepsini İncele</button>
       </div>
     </div>
-    <div class="our-products-inner">
-      <img src="Assets/img/ourpr4.webp" style="height: 530px;" alt="">
-      <div class="opr-text">
-        <h2>Sandalyeler</h2>
-        <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="our-products-inner flex1-0 relative flex column justifEnd">
+      <img class="absolute height100 width100 objectFitCover" src="Assets/img/ourpr4.webp" style="height: 530px;"
+        alt="">
+      <div class="opr-text width100 height100px pdLeft15 pdBottom15 displayNone">
+        <h2 class="font28px colorBlack lineHeightNormal">Sandalyeler</h2>
+        <button class="flex align-center space-between gap6 BorderNone colorWhite BgB88E2F font16px widthFit">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
               fill="currentColor" />
@@ -882,11 +921,12 @@
           Hepsini İncele</button>
       </div>
     </div>
-    <div class="our-products-inner">
-      <img src="Assets/img/ourpr5.PNG" style="height: 530px;" alt="">
-      <div class="opr-text">
-        <h2>Gardıroplar</h2>
-        <button><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="our-products-inner flex1-0 relative flex column justifEnd">
+      <img class="absolute height100 width100 objectFitCover" src="Assets/img/ourpr5.PNG" style="height: 530px;" alt="">
+      <div class="opr-text width100 height100px pdLeft15 pdBottom15 displayNone">
+        <h2 class="font28px colorBlack lineHeightNormal">Gardıroplar</h2>
+        <button class="flex align-center space-between gap6 BorderNone colorWhite BgB88E2F font16px widthFit"><svg
+            width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
               fill="currentColor" />
