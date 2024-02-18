@@ -35,37 +35,37 @@ hamburger.addEventListener('click', () => {
 
 const fiyatBtn = document.querySelector('#fiyat-btn')
 const fiyatBody = document.querySelector('#fiyat-body')
-// fiyatBtn.addEventListener('click', () => {
+ fiyatBtn.addEventListener('click', () => {
 
-//     if (fiyatBody.classList.contains("dropdown-open")) {
-//         fiyatBody.classList.remove("dropdown-open");
-//         fiyatBody.classList.add("dropdown-close");
-//         document.querySelector('#fiyat-btn .arrow').classList.remove('arrowRotateUp');
-//     }
-//     else {
-//         fiyatBody.classList.remove("dropdown-close");
-//         fiyatBody.classList.add("dropdown-open");
-//         document.querySelector('#fiyat-btn .arrow').classList.add('arrowRotateUp');
-//     }
-// })
+     if (fiyatBody.classList.contains("dropdown-open")) {
+         fiyatBody.classList.remove("dropdown-open");
+         fiyatBody.classList.add("dropdown-close");
+         document.querySelector('#fiyat-btn .arrow').classList.remove('arrowRotateUp');
+     }
+     else {
+         fiyatBody.classList.remove("dropdown-close");
+         fiyatBody.classList.add("dropdown-open");
+         document.querySelector('#fiyat-btn .arrow').classList.add('arrowRotateUp');
+     }
+ })
 
 
 const yildizbtn = document.querySelector('#yildiz-btn')
 const yildizBody = document.querySelector('#yildiz-body')
-// yildizbtn.addEventListener('click', () => {
-//     if (yildizBody.classList.contains("dropdown-open")) {
-//         yildizBody.classList.remove("dropdown-open");
-//         yildizBody.classList.add("dropdown-close");
-//         document.querySelector('#yildiz-btn .arrow').classList.remove('arrowRotateUp');
+ yildizbtn.addEventListener('click', () => {
+     if (yildizBody.classList.contains("dropdown-open")) {
+         yildizBody.classList.remove("dropdown-open");
+         yildizBody.classList.add("dropdown-close");
+         document.querySelector('#yildiz-btn .arrow').classList.remove('arrowRotateUp');
 
-//     }
-//     else {
-//         yildizBody.classList.remove("dropdown-close");
-//         yildizBody.classList.add("dropdown-open");
-//         document.querySelector('#yildiz-btn .arrow').classList.add('arrowRotateUp');
+     }
+     else {
+         yildizBody.classList.remove("dropdown-close");
+         yildizBody.classList.add("dropdown-open");
+         document.querySelector('#yildiz-btn .arrow').classList.add('arrowRotateUp');
 
-//     }
-// })
+     }
+ })
 
 const renkBtn = document.querySelector('#renk-btn')
 const renkBody = document.querySelector('#renk-body')
@@ -169,7 +169,7 @@ function next() {
 function prev() {
     i--;
     if (i < 0) {
-        i = sliders.length - 1; //2
+        i = sliders.length - 1; 2
         console.log(i);
         sliders[0].classList.remove("active");
         sliders[i].classList.add("active");
