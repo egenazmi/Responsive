@@ -1252,10 +1252,11 @@ header {
   }
   .LoginMain{
     height: calc(100vh - 100px) !important;
+    align-items: flex-start !important;
     
   }
   .main-inner{
-        height: calc(100vh - 150px) !important;
+        height: calc(100vh - 100px) !important;
   }
   .loginSide{
     flex-direction: column;
